@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group = 'snw.rfm'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+def lombok = "org.projectlombok:lombok:1.18.32"
+dependencies {
+    compileOnly lombok
+    annotationProcessor lombok
+}
